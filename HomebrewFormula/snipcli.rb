@@ -5,10 +5,12 @@ class Snipcli < Formula
   sha256 "080b93778797eb4c77b641c06a65f6e19791e89a208a351f2535dcb80c3333e1"
 
 	depends_on "crystal"
+	depends_on "readline" => :recommended
 
   def install
     # system "shards", "install"
     # system "make", "install", "PREFIX=#{prefix}"
+    system "make", "cp", "PREFIX=#{prefix}"
   end
 
   test do
