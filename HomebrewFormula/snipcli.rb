@@ -2,7 +2,7 @@ class Snipcli < Formula
   desc "Snipline CLI is the command-line tool for Snipline"
   homepage "https://snipline.io/"
 	url "https://github.com/snipline/snipcli/releases/download/0.3.0/snipcli.tar.gz"
-  sha256 "0f97cd2ce261effc236e4171fab0b019f435f651c15640672fc1c48e31f5c63b"
+  sha256 "953c383f4dc0df4b9c428d020350124d4770a370441924eea8ebe5be079777bf"
 
 	depends_on "crystal"
 	depends_on "readline" => :recommended
