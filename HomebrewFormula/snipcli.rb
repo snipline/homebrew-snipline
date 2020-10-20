@@ -1,8 +1,8 @@
 class Snipcli < Formula
   desc "Snipline CLI is the command-line tool for Snipline"
   homepage "https://snipline.io/"
-	url "https://github.com/snipline/snipcli/archive/0.3.3.tar.gz"
-  sha256 "ec51e207417fde3b668de0290442f09842336c34a8ee82ab209e7dd01966b6cc"
+	url "https://github.com/snipline/snipcli/archive/0.5.0.tar.gz"
+  sha256 "5e9af425c16fc2207d5b289dcb344ac7002a1c27625d83856cc725bdfc9d4778"
 
 	depends_on "crystal"
 	# depends_on "readline" => :recommended
@@ -16,6 +16,6 @@ class Snipcli < Formula
 
   test do
     output = shell_output("#{bin}/snipcli --version")
-    assert_match "0.3.3", output
+    assert_match "0.5.0", output
   end
 end
